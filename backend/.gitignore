@@ -94,6 +94,7 @@ logs
 results
 _modules
 ._history
+node_modules
 
 ############################
 # Tests
