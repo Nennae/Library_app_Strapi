@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"/>
+<link rel="stylesheet" href="styles/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <title>Library</title>
+</head>
+      <body>
+
+            <!-- NAV -->
+<header class="header">
+      <div class="titleLogo">
+      <img class="logo" src="images/duck-svgrepo-com.svg" alt="" width="40" height="40">
+      <h1 class="page-title"><a href="index.html">BookDuck</a></h1>
+</div>
+      <div class="logginUser-section">
+            <button id="checkMe" class="checkMe"><i href="register.html" class="fa-solid fa-user user-logo"></i></button>
+            <a class="login-btn" href="login.html">Logga in</a>
+            <button class="logout-btn hidden" id="logout-btn"  href="login.html">Logga ut</button>
+      </div>
+</header>
+<!-- <button id="checkMe" class="checkMe">Check Me</button> -->
+
+      <!-- LOGGEDIN USER INFO -->
+<section class="userInfo">
+            <!-- Insert Template literal JS -->
+      </section>
+      <div class="userBooks">
+            <!-- Insert Template literal JS -->
+      </div>
+
+      <!-- LOGIN SECTION -->
+      <section class="loginSection">
+      <h2 class="pageTitle loginTitle">Logga in för att se våra böcker</h2>
+<form class="loginForm">
+      <label for="userIdentifier">Användarnamn / E-mail</label>
+      <input type="text" id="userIdentifier">
+      <br>
+      <label for="passIdentifier">Lösenord</label>
+      <input type="text" id="passIdentifier">
+      <br>
+      <button class="loginBtn logoutBtn" id="loginBtn">LOGGA IN</button>
+      <a href="register.html">Skapa konto här</a>
+</form>
+</section>
+
+            <!-- BOOKS AND AUDIOS SECTION -->
+      <section id="bookSection" class="book-section hidden">
+            <h2 class="book-section-header">Böcker</h2>
+            
+      </section>
+      <section id="audioSection" class="audio-section hidden">
+                  <h2 class="audio-section-header">Ljudböcker</h2>
+            </section>
+            <footer>
+                  <p>BookDuck AB Copyright © 2005-2022</p>
+            </footer>
+      <script src="js/script.js" type="module"></script>
+      <script src="js/register.js" type="module"></script>
+</body>
+</html>
